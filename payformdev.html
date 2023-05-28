@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Document</title>
+  <style type="text/css">
+      /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+      /* Document
+   ========================================================================== */
+
+      /**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+      html {
+        line-height: 1.15; /* 1 */
+        -webkit-text-size-adjust: 100%; /* 2 */
+      }
+
+      /* Sections
+   ========================================================================== */
+
+      /**
+ * Remove the margin in all browsers.
+ */
+
+      body {
+        margin: 0;
+      }
+
+      /**
+ * Render the `main` element consistently in IE.
+ */
+
+      main {
+        display: block;
+      }
+
+      /**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+
+      /* Grouping content
+   ========================================================================== */
+
+      /**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+      hr {
+        box-sizing: content-box; /* 1 */
+        height: 0; /* 1 */
+        overflow: visible; /* 2 */
+      }
+
+      /**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+      pre {
+        font-family: monospace, monospace; /* 1 */
+        font-size: 1em; /* 2 */
+      }
+
+      /* Text-level semantics
+   ========================================================================== */
+
+      /**
+ * Remove the gray background on active links in IE 10.
+ */
+
+      a {
+        background-color: transparent;
+      }
+
+      /**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+      abbr[title] {
+        border-bottom: none; /* 1 */
+        text-decoration: underline; /* 2 */
+        text-decoration: underline dotted; /* 2 */
+      }
+
+      /**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+      b,
+      strong {
+        font-weight: bolder;
+      }
+
+      /**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+      code,
+      kbd,
+      samp {
+        font-family: monospace, monospace; /* 1 */
+        font-size: 1em; /* 2 */
+      }
+
+      /**
+ * Add the correct font size in all browsers.
+ */
+
+      small {
+        font-size: 80%;
+      }
+
+      /**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+
+      sub {
+        bottom: -0.25em;
+      }
+
+      sup {
+        top: -0.5em;
+      }
+
+      /* Embedded content
+   ========================================================================== */
+
+      /**
+ * Remove the border on images inside links in IE 10.
+ */
+
+      img {
+        border-style: none;
+      }
+
+      /* Forms
+   ========================================================================== */
+
+      /**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit; /* 1 */
+        font-size: 100%; /* 1 */
+        line-height: 1.15; /* 1 */
+        margin: 0; /* 2 */
+      }
+
+      /**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+      button,
+      input {
+        /* 1 */
+        overflow: visible;
+      }
+
+      /**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+      button,
+      select {
+        /* 1 */
+        text-transform: none;
+      }
+
+      /**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+
+      /**
+ * Remove the inner border and padding in Firefox.
+ */
+
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      /**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+      button:-moz-focusring,
+      [type="button"]:-moz-focusring,
+      [type="reset"]:-moz-focusring,
+      [type="submit"]:-moz-focusring {
+        outline: 1px dotted ButtonText;
+      }
+
+      /**
+ * Correct the padding in Firefox.
+ */
+
+      fieldset {
+        padding: 0.35em 0.75em 0.625em;
+      }
+
+      /**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+      legend {
+        box-sizing: border-box; /* 1 */
+        color: inherit; /* 2 */
+        display: table; /* 1 */
+        max-width: 100%; /* 1 */
+        padding: 0; /* 3 */
+        white-space: normal; /* 1 */
+      }
+
+      /**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+      progress {
+        vertical-align: baseline;
+      }
+
+      /**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+      textarea {
+        overflow: auto;
+      }
+
+      /**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+      [type="checkbox"],
+      [type="radio"] {
+        box-sizing: border-box; /* 1 */
+        padding: 0; /* 2 */
+      }
+
+      /**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+      [type="number"]::-webkit-inner-spin-button,
+      [type="number"]::-webkit-outer-spin-button {
+        height: auto;
+      }
+
+      /**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+      [type="search"] {
+        -webkit-appearance: textfield; /* 1 */
+        outline-offset: -2px; /* 2 */
+      }
+
+      /**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+      [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+
+      /**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button; /* 1 */
+        font: inherit; /* 2 */
+      }
+
+      /* Interactive
+   ========================================================================== */
+
+      /*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+      details {
+        display: block;
+      }
+
+      /*
+ * Add the correct display in all browsers.
+ */
+
+      summary {
+        display: list-item;
+      }
+
+      /* Misc
+   ========================================================================== */
+
+      /**
+ * Add the correct display in IE 10+.
+ */
+
+      template {
+        display: none;
+      }
+
+      /**
+ * Add the correct display in IE 10.
+ */
+
+      [hidden] {
+        display: none;
+      }
+
+      /* Variables */
+      :root {
+        --body-color: #fff !important;
+        --button-color: rgb(30, 166, 114);
+        --accent-color: #0a721b;
+        --link-color: #ffffff;
+        --font-color: rgb(105, 115, 134);
+        --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        --radius: 6px;
+        --form-width: 350px;
+      }
+
+      /* Base */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: var(--body-font-family);
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Layout */
+      .sr-root {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 980px;
+        padding: 48px;
+        align-content: center;
+        justify-content: center;
+        height: auto;
+        min-height: 100vh;
+        margin: 0 auto;
+      }
+      .sr-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-self: center;
+        padding: 0px 0px;
+        background: var(--body-color) !important;
+        min-width: var(--form-width);
+        border-radius: var(--radius);
+        box-shadow: none !important;
+      }
+
+      .sr-field-error {
+        color: var(--font-color);
+        text-align: left;
+        font-size: 13px;
+        line-height: 17px;
+        margin-top: 12px;
+      }
+
+      /* Inputs */
+      .sr-input,
+      input[type="text"] {
+        border: 1px solid var(--gray-border);
+        border-radius: var(--radius);
+        padding: 5px 12px;
+        height: 44px;
+        width: 100%;
+        transition: box-shadow 0.2s ease;
+        background: white;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      .sr-input:focus,
+      input[type="text"]:focus,
+      button:focus,
+      .focused {
+        box-shadow: 0 0 0 1px rgba(50, 151, 211, 0.3),
+          0 1px 1px 0 rgba(0, 0, 0, 0.07), 0 0 0 4px rgba(50, 151, 211, 0.3);
+        outline: none;
+        z-index: 9;
+      }
+      .sr-input::placeholder,
+      input[type="text"]::placeholder {
+        color: var(--gray-light);
+      }
+      .sr-result {
+        height: 44px;
+        -webkit-transition: height 1s ease;
+        -moz-transition: height 1s ease;
+        -o-transition: height 1s ease;
+        transition: height 1s ease;
+        color: var(--font-color);
+        overflow: auto;
+      }
+      .sr-result code {
+        overflow: scroll;
+      }
+      .sr-result.expand {
+        height: 350px;
+      }
+
+      .sr-combo-inputs-row {
+        box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+          0px 2px 5px 0px rgba(50, 50, 93, 0.1),
+          0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+        border-radius: 7px;
+      }
+
+      /* Buttons and links */
+      button {
+        background: var(--accent-color);
+        border-radius: var(--radius);
+        color: white;
+        border: 0;
+        padding: 12px 16px;
+        margin-top: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: block;
+        box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+        width: 100%;
+      }
+      button:hover {
+        filter: contrast(115%);
+      }
+      button:active {
+        transform: translateY(0px) scale(0.98);
+        filter: brightness(0.9);
+      }
+      button:disabled {
+        opacity: 0.5;
+        cursor: none;
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      a:hover {
+        filter: brightness(0.8);
+      }
+
+      a:active {
+        filter: brightness(0.5);
+      }
+
+      /* Code block */
+      code,
+      pre {
+        font-family: "SF Mono", "IBM Plex Mono", "Menlo", monospace;
+        font-size: 12px;
+      }
+
+      /* Stripe Element placeholder */
+      .sr-card-element {
+        padding-top: 12px;
+      }
+
+      /* Responsiveness */
+      @media (max-width: 720px) {
+        .sr-root {
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 0px 0px;
+          min-width: 40px !important;
+        }
+
+        .sr-header__logo {
+          background-position: center;
+        }
+
+        .sr-payment-summary {
+          text-align: center;
+        }
+
+        .sr-content {
+          display: none;
+        }
+
+        .sr-main {
+          width: 100%;
+          max-height: 305px;
+          background: rgb(247, 250, 252);
+          box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+            0px 2px 5px 0px rgba(50, 50, 93, 0.1),
+            0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+          border-radius: 6px;
+        }
+      }
+
+      /* todo: spinner/processing state, errors, animations */
+
+      .spinner,
+      .spinner:before,
+      .spinner:after {
+        border-radius: 50%;
+      }
+      .spinner {
+        color: #ffffff;
+        font-size: 22px;
+        text-indent: -99999px;
+        margin: 0px auto;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        box-shadow: inset 0 0 0 2px;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+      .spinner:before,
+      .spinner:after {
+        position: absolute;
+        content: "";
+      }
+      .spinner:before {
+        width: 10.4px;
+        height: 20.4px;
+        background: var(--accent-color);
+        border-radius: 20.4px 0 0 20.4px;
+        top: -0.2px;
+        left: -0.2px;
+        -webkit-transform-origin: 10.4px 10.2px;
+        transform-origin: 10.4px 10.2px;
+        -webkit-animation: loading 2s infinite ease 1.5s;
+        animation: loading 2s infinite ease 1.5s;
+      }
+      .spinner:after {
+        width: 10.4px;
+        height: 10.2px;
+        background: var(--accent-color);
+        border-radius: 0 10.2px 10.2px 0;
+        top: -0.1px;
+        left: 10.2px;
+        -webkit-transform-origin: 0px 10.2px;
+        transform-origin: 0px 10.2px;
+        -webkit-animation: loading 2s infinite ease;
+        animation: loading 2s infinite ease;
+      }
+
+      @-webkit-keyframes loading {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes loading {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Animated form */
+
+      .sr-root {
+        animation: 0.4s form-in;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @keyframes field-in {
+        0% {
+          opacity: 0;
+          transform: translateY(8px) scale(0.95);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0px) scale(1);
+        }
+      }
+
+      @keyframes form-in {
+        0% {
+          opacity: 0;
+          transform: scale(0.98);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+<div class="sr-root">
+  <div class="sr-main">
+    <form id="payment-form" class="sr-payment-form">
+      <div class="sr-combo-inputs-row">
+        <div class="sr-input sr-card-element" id="card-element"></div>
+      </div>
+      <div class="sr-field-error" id="card-errors" role="alert"></div>
+      <button id="submit">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pay</span><span id="order-amount"></span>
+      </button>
+    </form>
+    <div class="sr-result hidden">
+      <p>Payment completed<br /></p>
+      <pre>
+            <code></code>
+          </pre>
+    </div>
+  </div>
+</div>
+<script>
+      !(function () {
+        "use strict";
+        var e = {
+            123: function (e, t, n) {
+              var r = n(15),
+                o = n.n(r),
+                a = n(645),
+                i = n.n(a)()(o());
+              i.push([
+                e.id,
+                "// extracted by mini-css-extract-plugin\nexport {};",
+                "",
+                {
+                  version: 3,
+                  sources: ["webpack://./src/assets/css/global.css"],
+                  names: [],
+                  mappings: "AAAA;QACQ,CAAA",
+                  sourcesContent: [
+                    "// extracted by mini-css-extract-plugin\nexport {};",
+                  ],
+                  sourceRoot: "",
+                },
+              ]),
+                (t.Z = i);
+            },
+            960: function (e, t, n) {
+              var r = n(15),
+                o = n.n(r),
+                a = n(645),
+                i = n.n(a)()(o());
+              i.push([
+                e.id,
+                "// extracted by mini-css-extract-plugin\nexport {};",
+                "",
+                {
+                  version: 3,
+                  sources: ["webpack://./src/assets/css/normalize.css"],
+                  names: [],
+                  mappings: "AAAA;QACQ,CAAA",
+                  sourcesContent: [
+                    "// extracted by mini-css-extract-plugin\nexport {};",
+                  ],
+                  sourceRoot: "",
+                },
+              ]),
+                (t.Z = i);
+            },
+            645: function (e) {
+              e.exports = function (e) {
+                var t = [];
+                return (
+                  (t.toString = function () {
+                    return this.map(function (t) {
+                      var n = e(t);
+                      return t[2]
+                        ? "@media ".concat(t[2], " {").concat(n, "}")
+                        : n;
+                    }).join("");
+                  }),
+                  (t.i = function (e, n, r) {
+                    "string" == typeof e && (e = [[null, e, ""]]);
+                    var o = {};
+                    if (r)
+                      for (var a = 0; a < this.length; a++) {
+                        var i = this[a][0];
+                        null != i && (o[i] = !0);
+                      }
+                    for (var c = 0; c < e.length; c++) {
+                      var s = [].concat(e[c]);
+                      (r && o[s[0]]) ||
+                        (n &&
+                          (s[2]
+                            ? (s[2] = "".concat(n, " and ").concat(s[2]))
+                            : (s[2] = n)),
+                        t.push(s));
+                    }
+                  }),
+                  t
+                );
+              };
+            },
+            15: function (e) {
+              function t(e, t) {
+                (null == t || t > e.length) && (t = e.length);
+                for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
+                return r;
+              }
+              e.exports = function (e) {
+                var n,
+                  r,
+                  o =
+                    ((r = 4),
+                    (function (e) {
+                      if (Array.isArray(e)) return e;
+                    })((n = e)) ||
+                      (function (e, t) {
+                        if (
+                          "undefined" != typeof Symbol &&
+                          Symbol.iterator in Object(e)
+                        ) {
+                          var n = [],
+                            r = !0,
+                            o = !1,
+                            a = void 0;
+                          try {
+                            for (
+                              var i, c = e[Symbol.iterator]();
+                              !(r = (i = c.next()).done) &&
+                              (n.push(i.value), !t || n.length !== t);
+                              r = !0
+                            );
+                          } catch (e) {
+                            (o = !0), (a = e);
+                          } finally {
+                            try {
+                              r || null == c.return || c.return();
+                            } finally {
+                              if (o) throw a;
+                            }
+                          }
+                          return n;
+                        }
+                      })(n, r) ||
+                      (function (e, n) {
+                        if (e) {
+                          if ("string" == typeof e) return t(e, n);
+                          var r = Object.prototype.toString
+                            .call(e)
+                            .slice(8, -1);
+                          return (
+                            "Object" === r &&
+                              e.constructor &&
+                              (r = e.constructor.name),
+                            "Map" === r || "Set" === r
+                              ? Array.from(e)
+                              : "Arguments" === r ||
+                                /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(
+                                  r
+                                )
+                              ? t(e, n)
+                              : void 0
+                          );
+                        }
+                      })(n, r) ||
+                      (function () {
+                        throw new TypeError(
+                          "Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+                        );
+                      })()),
+                  a = o[1],
+                  i = o[3];
+                if ("function" == typeof btoa) {
+                  var c = btoa(unescape(encodeURIComponent(JSON.stringify(i)))),
+                    s =
+                      "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(
+                        c
+                      ),
+                    u = "/*# ".concat(s, " */"),
+                    l = i.sources.map(function (e) {
+                      return "/*# sourceURL="
+                        .concat(i.sourceRoot || "")
+                        .concat(e, " */");
+                    });
+                  return [a].concat(l).concat([u]).join("\n");
+                }
+                return [a].join("\n");
+              };
+            },
+            379: function (e, t, n) {
+              var r,
+                o = (function () {
+                  var e = {};
+                  return function (t) {
+                    if (void 0 === e[t]) {
+                      var n = document.querySelector(t);
+                      if (
+                        window.HTMLIFrameElement &&
+                        n instanceof window.HTMLIFrameElement
+                      )
+                        try {
+                          n = n.contentDocument.head;
+                        } catch (e) {
+                          n = null;
+                        }
+                      e[t] = n;
+                    }
+                    return e[t];
+                  };
+                })(),
+                a = [];
+              function i(e) {
+                for (var t = -1, n = 0; n < a.length; n++)
+                  if (a[n].identifier === e) {
+                    t = n;
+                    break;
+                  }
+                return t;
+              }
+              function c(e, t) {
+                for (var n = {}, r = [], o = 0; o < e.length; o++) {
+                  var c = e[o],
+                    s = t.base ? c[0] + t.base : c[0],
+                    u = n[s] || 0,
+                    l = "".concat(s, " ").concat(u);
+                  n[s] = u + 1;
+                  var f = i(l),
+                    d = { css: c[1], media: c[2], sourceMap: c[3] };
+                  -1 !== f
+                    ? (a[f].references++, a[f].updater(d))
+                    : a.push({
+                        identifier: l,
+                        updater: v(d, t),
+                        references: 1,
+                      }),
+                    r.push(l);
+                }
+                return r;
+              }
+              function s(e) {
+                var t = document.createElement("style"),
+                  r = e.attributes || {};
+                if (void 0 === r.nonce) {
+                  var a = n.nc;
+                  a && (r.nonce = a);
+                }
+                if (
+                  (Object.keys(r).forEach(function (e) {
+                    t.setAttribute(e, r[e]);
+                  }),
+                  "function" == typeof e.insert)
+                )
+                  e.insert(t);
+                else {
+                  var i = o(e.insert || "head");
+                  if (!i)
+                    throw new Error(
+                      "Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid."
+                    );
+                  i.appendChild(t);
+                }
+                return t;
+              }
+              var u,
+                l =
+                  ((u = []),
+                  function (e, t) {
+                    return (u[e] = t), u.filter(Boolean).join("\n");
+                  });
+              function f(e, t, n, r) {
+                var o = n
+                  ? ""
+                  : r.media
+                  ? "@media ".concat(r.media, " {").concat(r.css, "}")
+                  : r.css;
+                if (e.styleSheet) e.styleSheet.cssText = l(t, o);
+                else {
+                  var a = document.createTextNode(o),
+                    i = e.childNodes;
+                  i[t] && e.removeChild(i[t]),
+                    i.length ? e.insertBefore(a, i[t]) : e.appendChild(a);
+                }
+              }
+              function d(e, t, n) {
+                var r = n.css,
+                  o = n.media,
+                  a = n.sourceMap;
+                if (
+                  (o ? e.setAttribute("media", o) : e.removeAttribute("media"),
+                  a &&
+                    "undefined" != typeof btoa &&
+                    (r +=
+                      "\n/*# sourceMappingURL=data:application/json;base64,".concat(
+                        btoa(unescape(encodeURIComponent(JSON.stringify(a)))),
+                        " */"
+                      )),
+                  e.styleSheet)
+                )
+                  e.styleSheet.cssText = r;
+                else {
+                  for (; e.firstChild; ) e.removeChild(e.firstChild);
+                  e.appendChild(document.createTextNode(r));
+                }
+              }
+              var p = null,
+                m = 0;
+              function v(e, t) {
+                var n, r, o;
+                if (t.singleton) {
+                  var a = m++;
+                  (n = p || (p = s(t))),
+                    (r = f.bind(null, n, a, !1)),
+                    (o = f.bind(null, n, a, !0));
+                } else
+                  (n = s(t)),
+                    (r = d.bind(null, n, t)),
+                    (o = function () {
+                      !(function (e) {
+                        if (null === e.parentNode) return !1;
+                        e.parentNode.removeChild(e);
+                      })(n);
+                    });
+                return (
+                  r(e),
+                  function (t) {
+                    if (t) {
+                      if (
+                        t.css === e.css &&
+                        t.media === e.media &&
+                        t.sourceMap === e.sourceMap
+                      )
+                        return;
+                      r((e = t));
+                    } else o();
+                  }
+                );
+              }
+              e.exports = function (e, t) {
+                (t = t || {}).singleton ||
+                  "boolean" == typeof t.singleton ||
+                  (t.singleton =
+                    (void 0 === r &&
+                      (r = Boolean(
+                        window && document && document.all && !window.atob
+                      )),
+                    r));
+                var n = c((e = e || []), t);
+                return function (e) {
+                  if (
+                    ((e = e || []),
+                    "[object Array]" === Object.prototype.toString.call(e))
+                  ) {
+                    for (var r = 0; r < n.length; r++) {
+                      var o = i(n[r]);
+                      a[o].references--;
+                    }
+                    for (var s = c(e, t), u = 0; u < n.length; u++) {
+                      var l = i(n[u]);
+                      0 === a[l].references && (a[l].updater(), a.splice(l, 1));
+                    }
+                    n = s;
+                  }
+                };
+              };
+            },
+          },
+          t = {};
+        function n(r) {
+          var o = t[r];
+          if (void 0 !== o) return o.exports;
+          var a = (t[r] = { id: r, exports: {} });
+          return e[r](a, a.exports, n), a.exports;
+        }
+        (n.n = function (e) {
+          var t =
+            e && e.__esModule
+              ? function () {
+                  return e.default;
+                }
+              : function () {
+                  return e;
+                };
+          return n.d(t, { a: t }), t;
+        }),
+          (n.d = function (e, t) {
+            for (var r in t)
+              n.o(t, r) &&
+                !n.o(e, r) &&
+                Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+          }),
+          (n.o = function (e, t) {
+            return Object.prototype.hasOwnProperty.call(e, t);
+          }),
+          (function () {
+            var e = n(379),
+              t = n.n(e),
+              r = n(960),
+              o =
+                (t()(r.Z, { insert: "head", singleton: !1 }),
+                r.Z.locals,
+                n(123));
+            t()(o.Z, { insert: "head", singleton: !1 }),
+              o.Z.locals,
+              (window.state = { tokenGenerate: "" });
+            var a = Stripe("pk_test_51MxgPADZoHXNizXT3Dy5zMDcgDcgKgKCCuZAOhDQwLE1nnSZV4qiubJAJUwDPxGG4NlZ0N8xXd47Qjm7JXrPkEod008fUtTnnZ"),
+              i = a.elements().create("card", {
+                style: {
+                  base: {
+                    iconColor: "#3bf",
+                    color: "#000",
+                    fontWeight: "500",
+                    fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+                    fontSize: "16px",
+                    fontSmoothing: "antialiased",
+                    ":-webkit-autofill": { color: "#006020" },
+                    "::placeholder": { color: "#888" },
+                  },
+                  invalid: { iconColor: "orange", color: "orange" },
+                  complete: { iconColor: "#006020", color: "#006020" },
+                },
+              });
+            i.mount("#card-element"),
+              document
+                .getElementById("payment-form")
+                .addEventListener("submit", function (e) {
+                  e.preventDefault(),
+                    a.createToken(i).then(function (e) {
+                      e.error
+                        ? (document.getElementById("card-errors").textContent =
+                            e.error.message)
+                        : ((window.tokenGenerate = e.token),
+                          (window.parent.window.state = e.token));
+                    });
+                });
+          })();
+      })();
+    </script>
+</body>
+</html>
