@@ -4,7 +4,10 @@ async function post(data) {
     console.log(data.url);
     let url = "https://" + data.url;
     console.log(url);
+
     let blobFile = new Blob([data.body.buffer], { type: "application/octet-stream" });
+
+    console.log('blob file created');
 
     const response = await fetch(url, {
         method: 'POST',
@@ -12,7 +15,7 @@ async function post(data) {
             "Authorization": data.headers.token,
             "Content-Type": data.headers.ctype
         },
-        body: data.body,
+        body: blobFile,
     });
     console.log('reached here at end');
     console.log(response);
